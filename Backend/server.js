@@ -1,3 +1,4 @@
+const config = require("./config.js");
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
@@ -57,7 +58,7 @@ app.delete("/api/tasks/:id", (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 8888;
+const PORT = process.env.PORT;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
