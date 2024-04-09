@@ -1,4 +1,5 @@
-const config = require("./config.js");
+require("./config.js");
+require("./db-connect.js");
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
